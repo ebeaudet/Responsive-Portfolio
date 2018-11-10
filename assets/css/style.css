@@ -11,8 +11,8 @@
 
 .header {
     float:left;
-    width:960px;
-    padding-top: 50px;
+    width:100%;
+
 }
 
 .name{
@@ -26,7 +26,7 @@
 
 .about-link, .portfolio-link, .contact-link {
     padding: 8px;
-    padding-top: 50px;
+    
     height:25px;
 }
 
@@ -224,50 +224,89 @@ footer{
 
 @media screen and (max-width: 960px) {
 
+    h1{
+        width:100%; 
+       /* margin-bottom: 30px; */
     }
-    .link-container a {
-        display: inline
-    }
-    a {
-        display: inline-block
+  
+    .header{
+        width:100%; 
+        padding-top:0px;
     }
 
+    .link-container{
+        width:100%; 
+        padding-top: 5px;
+
+         }
+
+    .pic-info, .middle-container, .aboutme, .pageHeading {
+        background: white;
+        width:100%;
+        float: left;
+        padding: 0%;
+        margin: 1% 1% 1% 1%;
+
+    }
 }
+
+
  /*width at 768px */
   @media screen and (max-width: 768px) {
     h1{
-        width:768px; 
-        margin-bottom: 30px;
+        width:100%; 
+        /* margin-bottom: 30px; */
     }
-    .link-container{
-        display: inline;
-        /* width:768px;  */
-        padding-top: 20px;
-    }
+  
     .header{
-        width:768px; 
-        float:left;
-        /* padding-top: 50px; */
+        width:100%; 
+        position: static;
+        padding-top:0px;
+    }
+
+    .link-container{
+        width:100%; 
+        padding-top: 5px;
+         }
+
+    .pic-info, .middle-container, .aboutme, .pageHeading {
+        background: white;
+        width:100%;
+        float: left;
+        padding: 0%;
+        margin: 1% 1% 1% 1%;
+
     }
 }
-
-  
 /* width at 640px */
   @media screen and (max-width: 640px) {
-    h1{
-        width:640px; 
-        margin-bottom: 30px;
-    }
-    .link-container{
-        width:640px; 
-        float: left;
-        /* padding-top: 20px; */
-    }
+  
     .header{
-        width:640px; 
-        float:left;
-        padding-top: 50px; 
+        position: static;
     }
+
+    .top-container, .name{
+        width:100%; 
+        padding-top:2px;
+        margin: 1% 1% 1% 1%;
+    }
+
+    .link-container{
+        width:100%; 
+        padding-top: 5px;
+         }
+
+    .pic-info, .middle-container, .aboutme, 
+    .pageHeading, .contact-form, .form,
+    .textbox {
+        background: white;
+        width:100%;
+        float: left;
+        padding: 0%;
+        margin: 1% 1% 1% 1%;
+
+    }
+
 }
 
 
